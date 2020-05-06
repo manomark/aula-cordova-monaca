@@ -26,7 +26,7 @@ $(document).on('click', '#vibration', function() {
       navigator.vibrate(10000);
 });
 
-
+//API MAPA
  function mostraMapa(lat, long) {
         L.mapquest.key = 'hLoK3mft3XTGgGTChJ5GmmweD1cL7IKA';
 
@@ -38,7 +38,7 @@ $(document).on('click', '#vibration', function() {
 
         map.addControl(L.mapquest.control());
       }
-
+//API MAPA
 $(document).on('click', '#local', function() {
    var onSuccess = function(position) {
    mostraMapa( position.coords.latitude, position.coords.longitude )
